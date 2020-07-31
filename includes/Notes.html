@@ -1,0 +1,52 @@
+
+<!--
+
+   Static Helper Classes will help with other operation in the website.
+
+P4: Initialization: Defines: start sessions, sets config files, and autoload classes. 
+    sanitize.php
+
+P5: Functions- sanitize.php    
+
+P6: 'Config.php' Config Class- Allows us to draw any options we want from the config set in "init.php"
+
+P8: DB Querying- Generic query method that can publicly query the DB from the 'index.php' or call it from within other class methods.
+    
+
+P15: Abstract the ability to redirect the user with the standard header function in php. 
+        Also build in extra functionality, redirect user to a 404 page with message for errors.
+
+
+register.php
+    Remove the need to use the header function and pass the string: Location: index.php into the function.
+       
+    OldCall: 
+Session::flash('home', 'You have been registered and can now log in!');
+    header('Location: index.php');
+   
+    NewCall= Related Class = Redirect (Redirect.php)
+Session::flash('home', 'You have been registered and can now log in!'); 
+    Redirect::to('index.php');
+
+    
+Somthing . something = cancantonate: this is the joining of character strings end-to-end. 'snow' . 'ball' = 'snowball'   
+    
+P16: Log in- gives users the ability to sign into there account. References the entered name/password to 
+the stored name/password and validates the password. It also sets a session to signify that they are 
+    signed in, and can utilize the 'rememberme' function.
+
+p17: Check if a user is signed in- 
+
+P18: Log Out- Gives user ability to log out and be redirected to an appropriate location.
+
+P19: Remember User- 
+
+P20:
+
+P21:
+
+P22:
+
+P23:
+
+-->
